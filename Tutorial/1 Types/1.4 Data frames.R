@@ -12,6 +12,7 @@ myDataFrame
 head(myDataFrame)
 summary(myDataFrame)
 attributes(myDataFrame)
+nrow(myDataFrame)
 
 # Accessing columns
 names(myDataFrame)
