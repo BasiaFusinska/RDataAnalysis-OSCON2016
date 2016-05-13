@@ -4,15 +4,16 @@ irisPath <- 'Data/iris.data'
 # Read data from file
 irisData <- read.csv(irisPath, header = FALSE)
 
+# Have a look at the data
+names(irisData)
+head(irisData)
+
 # Set proper headers
 names(irisData)
 
 names(irisData) <- c('Sepal.l', 'Sepal.w', 'Petal.l', 'Petal.w', 'Species')
 
-# Have a look at the data
-names(irisData)
-head(irisData)
-
+# Summary of data
 summary(irisData)
 
 # Add petal and sepal areas
