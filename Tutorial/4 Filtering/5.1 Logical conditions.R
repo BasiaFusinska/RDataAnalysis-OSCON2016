@@ -23,3 +23,8 @@ B[nchar(B) == 2]
 # Using filter function
 Filter(condition, a)
 Filter(function(x) { nchar(x) == 2 }, b)
+
+# Using subset function
+subset(a, a > 4)
+subset(a, condition(a))
+subset(A, A > 7)
