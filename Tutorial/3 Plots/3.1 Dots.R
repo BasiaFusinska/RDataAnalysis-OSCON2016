@@ -1,3 +1,7 @@
+# Read data
+sizesPath <- 'Data/sizes.csv'
+sizes <- read.csv(sizesPath)
+
 # Drawing points
 plot(sizes$length, sizes$width)
 
