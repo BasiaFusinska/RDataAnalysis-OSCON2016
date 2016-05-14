@@ -52,3 +52,4 @@ defaultBool
 1:20
 c(4, 10:15, 22)
 letters[3:9]
+cut(1:50, c(-Inf, 0, 5, 30, 40, Inf))
