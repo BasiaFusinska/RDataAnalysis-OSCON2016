@@ -23,3 +23,9 @@ population[, c('age', 'smoker')]
 
 # Using subset funsiton
 subset(population, gender == 'M' & age > 30, select=c(3,1))
+subset(population, gender == 'M' & age > 30, select=age:smoker)
+
+attach(population)
+gender
+population[age > 30,]
+detach(population)
