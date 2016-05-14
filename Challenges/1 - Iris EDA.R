@@ -40,10 +40,7 @@ irisData$Colour <- NULL
 #-------------------------------------------------
 # Use datasets for iris data
 str(iris)
-
-attach(iris)
 head(iris)
-detach(iris)
 
 # List available datasets
 data()
