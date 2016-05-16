@@ -34,8 +34,6 @@ summary(manhattan)
 # Convert sale date
 manhattan$SALE.DATE <- as.Date(manhattan$SALE.DATE)
 
-hist(manhattan$SALE.PRICE)
-
 # Check if prices are right
 nrow(manhattan)
 nrow(manhattan[manhattan$SALE.PRICE > 0,])

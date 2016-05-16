@@ -49,5 +49,5 @@ users$age[0]
 users
 
 # Display only users in their 20s
-inTwentees <- users[users$age >= 20 & users$age < 30,]
-inTwentees
+inTwenties <- users[users$age >= 20 & users$age < 30,]
+inTwenties

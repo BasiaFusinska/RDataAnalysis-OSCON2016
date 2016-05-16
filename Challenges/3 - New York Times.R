@@ -29,14 +29,14 @@ aggregate(Age ~ age_group + Gender, data=nyt, FUN=mean)
 # Impressions and Clicks per age group
 aggregate(cbind(Impressions, Clicks) ~ age_group, data=nyt, FUN=mean)
 
-# COunt impressions per age group
+# Count impressions per age group
 impressions <- aggregate(Impressions ~ age_group, data=nyt, FUN=sum)
 impressions
 
-# plot number of impressions per age group
+# Plot number of impressions per age group
 barplot(impressions$Impressions, names.arg = impressions$age_group, ylab = 'Total')
 
-# try doBy library
+# Try out doBy library
 install.packages("doBy") 
 library("doBy") 
 
